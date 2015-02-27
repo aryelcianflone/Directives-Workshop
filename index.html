@@ -2,14 +2,18 @@
 <html ng-app="directiveWorkshop">
 <head>
 	<title>My Directives</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body ng-controller="mainCtrl">
 
 <div>
-<h2>pending</h2>
+<h2>Pending</h2>
 	<form>
 		<input ng-model="query" placeholder="Search"/>
-		<button ng-click="getData()">Submit</button> 
+		<button pending request="getData()">Submit</button>
+		<div id="loading">
+			<img src="http://jxnblk.com/loading/loading-spinning-bubbles.svg" class="ajax-loader" />
+		</div>
 	</form>
 </div>
 
